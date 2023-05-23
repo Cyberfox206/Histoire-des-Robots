@@ -59,7 +59,6 @@ nav ul li a {
     color: var(--bleu-color-2);
 }
 
-
 @media (min-width:1000px) {
     nav {
         width: 100%;
@@ -86,133 +85,122 @@ nav ul li a {
 }
 
 /* ---------------------------------------------------- */
-
 main {
-    color: white;
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 }
 
 main section {
+    width: 80%;
+    margin: 50px 0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 90%;
 }
 
-main section h2 {
-    text-align: center;
+main section div {
     width: 100%;
-    color: var(--bleu-color-2);
+    display: flex;
+    flex-direction: column;
+}
+
+main section h1 {
+    width: 100%;
+    margin: 10px 0px;
     font-family: var(--bfont);
+    color: var(--bleu-color-2);
     text-transform: uppercase;
-    font-size: 2em;
     padding: 30px;
-    margin-bottom: 30px;
-    border: var(--bleu-color-1) dotted 3px;
-    border-bottom: none;
-}
-
-main section img {
-    width: 100%;
-}
-
-main section p {
     text-align: center;
+    border-top: dashed var(--bleu-color-1) 3px;
+    border-right: dashed var(--bleu-color-1) 3px;
+    border-left: dashed var(--bleu-color-1) 3px;
+}
+
+main section div p {
+    text-align: center;
+    margin: 10px;
     color: var(--bleu-color-2);
-    font-family: var(--bfont);
     text-transform: uppercase;
+    font-family: var(--bfont);
+}
+
+main section div hr {
+    width: 90%;
+    align-self: center;
+    border: var(--red-color) 1px dashed;
+}
+
+main section div p a {
+    color: var(--red-color);
+    text-transform: uppercase;
+    font-family: var(--bfont);
     font-weight: 100;
-    font-size: 1.2em;
-    margin: 60px 0px;
+}
+
+main section div i {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px;
 }
 
 @media (min-width:1000px) {
     main section {
         display: flex;
-        justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
     }
 
-    main section img {
-        width: 60%;
+    main section div {
+        width: 33%;
     }
 }
-
 
 /* ---------------------------------------------------- */
 
-table {
-    width: 90%;
-    margin: 30px 0px;
-    padding: 5px;
-    color: var(--bleu-color-2);
-    background-color: white;
-    font-family: var(--bfont);
-    text-transform: uppercase;
-    border: 3px dashed var(--bleu-color-1);
-}
-
-table thead tr th {
-    color: white;
-    background-color: var(--bleu-color-1);
-    padding: 20px;
-    font-size: 1.3em;
-}
-
-table tbody tr td ul {
-    margin-left: 20px;
-    list-style: circle;
-}
-
-table tbody tr td ul li {
-    font-weight: 100;
-    font-size: 1.2em;
-    margin: 15px;
-}
-
-table tfoot tr td {
-    display: flex;
-    justify-content: center;
-}
-
-table tfoot tr td strong {
-    font-size: 1.3em;
-    margin: 20px;
-}
-
-table tfoot tr td button {
+form {
     width: 100%;
-    border: none;
-    padding: 20px;
-    background-color: var(--red-color);
-    font-family: var(--bfont);
-    font-size: 1em;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+form p {
+    width: 90%;
+    padding: 15px 0px 15px 80px;
+    font-size: 1.3em;
     text-transform: uppercase;
-    font-weight: 100;
+    background-color: var(--red-color);
+    color: rgba(255, 255, 255, 0.637);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button {
+    width: 10%;
+    border: none;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    background-color: var(--bleu-color-1);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width:1000px) {
-    table {
-        width: 30%;
-        margin: 30px 10px;
+    form p {
+        padding: 30px 0px 30px 80px;
     }
 }
 
 /* ---------------------------------------------------- */
 
+/* ---------------------------------------------------- */
 footer {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: var(--bleu-color-2);
-
 }
 
 footer ul {
